@@ -1,0 +1,109 @@
+.welcomepage {
+  box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.483);
+}
+
+.WelcomePageBG {
+  background-color: rgba(0, 0, 0, 0.502);
+}
+
+.MainH {
+  background: linear-gradient(to right, purple, red);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.top5-12 {
+  top: 42%;
+  font-size: 72px;
+}
+
+.headingAni {
+  animation: headingAnimation 1s linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes headingAnimation {
+  from {
+    top: 42%;
+    font-size: 72px;
+  }
+
+  to {
+    top: 2%;
+    font-size: 50px;
+  }
+
+}
+
+.BtnsShow {
+  display: flex;
+  transform: translateY(384px);
+  animation: up 1.2s linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes up {
+  from {
+    transform: translateY(384px);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+.bg-blur {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.shadow-custom {
+  box-shadow: 8px 8px 10px rgba(0, 0, 0, 1);
+}
+
+.left-custom {
+  left: 37%;
+}
+
+@media not all and (min-width: 640px) {
+  .left-custom {
+    left: 4.17%;
+
+  }
+}
+
+.px-2- {
+  padding: 0 2%;
+}
+
+.chatting-ani-show {
+  animation: chattingAniShow 0.7s linear;
+  animation-fill-mode: forwards;
+}
+
+.chatting-ani-hide {
+  animation: chattingAni 0.7s linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes chattingAniShow {
+  from {
+    margin-left: 100%;
+  }
+
+  to {
+    margin-left: 0;
+  }
+
+}
+
+@keyframes chattingAni {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(100%);
+  }
+
+
+}
